@@ -100,7 +100,7 @@ mod tests {
             read_keypair_file("turbin3-wallet.json").expect("Could not find turbin3-wallet.json");
 
         let prereq = TurbinePrereqProgram::derive_program_address(&[
-            b"preQ225",
+            b"prereq",
             signer.pubkey().to_bytes().as_ref(),
         ]);
 
